@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap");
+
 :root {
   --ink: #08213b;
   --deep: #063b5d;
@@ -447,6 +449,12 @@ p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.form-link-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .card,
 .info-card,
 .source-card,
@@ -464,6 +472,17 @@ p {
   height: 132px;
   object-fit: cover;
   width: 100%;
+}
+
+.form-card {
+  align-content: start;
+  min-height: 260px;
+}
+
+.form-card .button {
+  margin-top: auto;
+  min-width: 0;
+  width: fit-content;
 }
 
 .card-icon,
@@ -553,6 +572,11 @@ p {
   grid-template-columns: minmax(0, 0.98fr) minmax(330px, 0.82fr);
 }
 
+.simple-builder {
+  align-items: start;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.9fr);
+}
+
 .builder-form,
 .output-panel {
   padding: 1rem;
@@ -624,7 +648,7 @@ a:focus {
 }
 
 .markdown-output {
-  min-height: 860px;
+  min-height: 520px;
   white-space: pre;
 }
 
@@ -739,6 +763,7 @@ a:focus {
 
 @media (max-width: 1040px) {
   .sitemap-grid,
+  .form-link-grid,
   .form-grid,
   .source-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -809,6 +834,7 @@ a:focus {
 
   .step-grid,
   .sitemap-grid,
+  .form-link-grid,
   .form-grid,
   .source-grid,
   .field-grid,
