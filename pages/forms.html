@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create and download a PLFC AI-ready Markdown file for meetings, events, social content, grants, storage maps and privacy-safe club work.">
+    <title>Forms | PLFC AI Helper Forms</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito+Sans:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand-mark" href="../index.html"><img src="../assets/favicon.svg" alt="" width="48" height="48"><span class="brand-text"><strong>PLFC AI Helper Forms</strong><span>Point Lookout Fishing Club</span></span></a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="forms.html" aria-current="page">Forms</a>
+          <a href="site-map.html">Site Map</a>
+          <a href="how-it-works.html">How It Works</a>
+          <a href="source-storage.html">Sources</a>
+          <a href="social-content.html">Social</a>
+          <a href="privacy-permissions.html">Privacy</a>
+          <a href="help.html">Help</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="forms-title">
+        <img class="hero-image" src="../assets/hero-forms.webp" alt="Simple forms, notes and club content tools on a sunny coastal table" width="1792" height="1024">
+        <div class="hero-tint"></div>
+        <div class="hero-copy">
+          <h1 id="forms-title">Choose a form. Download a `.md` file.</h1>
+          <p class="hero-lede">Use the builder for any club job where AI needs better context: meetings, memberships, events, social content, grants, source maps or privacy review.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#builder">Start the builder</a>
+            <a class="button secondary" href="how-it-works.html">Read the simple steps</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="builder" aria-labelledby="builder-title">
+        <div class="section-heading">
+          <h2 id="builder-title">AI-ready Markdown builder</h2>
+          <p>Answers stay in this browser unless you copy or download them. Check the generated file before pasting it into any AI tool.</p>
+        </div>
+        <div class="template-strip" aria-label="Available form kinds">
+          <span class="template-chip">Meetings</span>
+          <span class="template-chip">Memberships</span>
+          <span class="template-chip">Events</span>
+          <span class="template-chip">Social content</span>
+          <span class="template-chip">Storage</span>
+          <span class="template-chip">Grants</span>
+          <span class="template-chip">Education</span>
+        </div>
+
+        <div class="builder-layout">
+          <form class="builder-form" data-ai-md-form>
+            <fieldset>
+              <legend>Part A - what do you need help with?</legend>
+              <div class="field-grid">
+                <label>Form kind
+                  <select name="form_kind">
+                    <option value="operations_meeting">Club operations or meeting</option>
+                    <option value="membership_volunteer">Membership or volunteer</option>
+                    <option value="event_field">Fishing event or field ops</option>
+                    <option value="social_content">Social content or GenAI media</option>
+                    <option value="source_storage">Source and storage map</option>
+                    <option value="grants_evidence">Grant or evidence note</option>
+                    <option value="education_tourism">Education, kids or visitors</option>
+                    <option value="custom">Something else</option>
+                  </select>
+                </label>
+                <label>Working title
+                  <input name="title" placeholder="Example: June school holiday comp content plan">
+                </label>
+              </div>
+              <label>Plain goal
+                <textarea name="plain_goal" rows="3" placeholder="What are we trying to make, decide, fix, explain or share?"></textarea>
+              </label>
+              <label>Who is this for?
+                <input name="audience" placeholder="Example: committee, members, volunteers, kids, tourists, sponsors">
+              </label>
+              <label>What should AI do?
+                <textarea name="ai_request" rows="3" placeholder="Example: Make a short action list, then draft three Facebook post options in plain Australian English."></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Part B - tools and output</legend>
+              <div class="field-grid">
+                <label>AI tool or model
+                  <select name="ai_tool">
+                    <option value="ChatGPT or other LLM">ChatGPT or other LLM</option>
+                    <option value="Claude">Claude</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Copilot or coding agent">Copilot or coding agent</option>
+                    <option value="Canva">Canva</option>
+                    <option value="CapCut or video model">CapCut or video model</option>
+                    <option value="Image model">Image model</option>
+                    <option value="Song or music model">Song or music model</option>
+                    <option value="Not sure yet">Not sure yet</option>
+                  </select>
+                </label>
+                <label>Output wanted
+                  <select name="output_type">
+                    <option value="plain summary">Plain summary</option>
+                    <option value="meeting agenda">Meeting agenda</option>
+                    <option value="action list">Action list</option>
+                    <option value="caption pack">Caption pack</option>
+                    <option value="video script">Video script</option>
+                    <option value="image prompt">Image prompt</option>
+                    <option value="song prompt">Song prompt</option>
+                    <option value="spreadsheet plan">Spreadsheet plan</option>
+                    <option value="grant evidence note">Grant evidence note</option>
+                    <option value="public page draft">Public page draft</option>
+                  </select>
+                </label>
+              </div>
+              <label>Context notes
+                <textarea name="context_notes" rows="5" placeholder="Add dates, people, place, event, platform, tone, known issues or what changed."></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Part C - sources and storage</legend>
+              <label>Source files, links or clues
+                <textarea name="source_files" rows="4" placeholder="One source per line: PDF, spreadsheet, Drive folder, website link, photo album, email, meeting note, calendar item."></textarea>
+              </label>
+              <label>Storage location or source of truth
+                <textarea name="storage_location" rows="3" placeholder="Example: Committee Google Drive / 02 Competitions / 2026 school holiday comp"></textarea>
+              </label>
+              <label>Suggested file name
+                <input name="filename" placeholder="plfc-ai-helper-brief.md">
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Part D - privacy, permission and review</legend>
+              <div class="field-grid">
+                <label>Privacy lane
+                  <select name="privacy_lane">
+                    <option value="committee_only">Committee only</option>
+                    <option value="private_source">Private source</option>
+                    <option value="trusted_helpers">Trusted helpers</option>
+                    <option value="public_draft">Public draft</option>
+                    <option value="public_after_review">Public after review</option>
+                  </select>
+                </label>
+                <label>Human reviewer
+                  <input name="reviewer" placeholder="Example: secretary, media lead, treasurer, committee">
+                </label>
+              </div>
+              <label>What must not be shared?
+                <textarea name="must_not_share" rows="3" placeholder="Member contact details, payment details, private GPS, unapproved photos, private Drive links, children images, private committee notes."></textarea>
+              </label>
+              <label>Country, culture and community care
+                <textarea name="country_culture" rows="3" placeholder="Anything that needs extra respect, permission, local checking or careful wording?"></textarea>
+              </label>
+              <label>Facts to check before publishing
+                <textarea name="facts_to_check" rows="4" placeholder="Dates, times, prices, names, locations, links, permissions, official wording, sponsor claims."></textarea>
+              </label>
+              <label>Review notes
+                <textarea name="review_notes" rows="3" placeholder="What should a human check before this is used or published?"></textarea>
+              </label>
+              <label>Next action
+                <textarea name="next_action" rows="2" placeholder="Example: Ask two helpers to check the draft and confirm the event date."></textarea>
+              </label>
+            </fieldset>
+
+            <div class="builder-actions">
+              <button class="button primary" type="submit">Update markdown</button>
+              <button class="button secondary" type="button" data-copy-md>Copy markdown</button>
+              <button class="button gold" type="button" data-download-md>Download .md</button>
+              <button class="button danger" type="button" data-clear-md>Clear answers</button>
+            </div>
+            <p class="status" data-builder-status aria-live="polite">Ready.</p>
+          </form>
+
+          <aside class="output-panel" aria-label="Generated markdown output">
+            <label for="markdown-output">Generated Markdown</label>
+            <textarea id="markdown-output" class="markdown-output" data-md-output spellcheck="false" readonly></textarea>
+            <p class="form-note">The file is a helper. It is not proof. Check sources, permissions and facts before using the AI output.</p>
+          </aside>
+        </div>
+      </section>
+
+      <nav class="page-trail" aria-label="Page navigation">
+        <a href="../index.html"><span>Previous page</span><strong>Home</strong></a>
+        <a href="../index.html"><span>Home</span><strong>PLFC AI Helper Forms</strong></a>
+        <a href="how-it-works.html"><span>Next page</span><strong>How It Works</strong></a>
+      </nav>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div><strong>Forms</strong><p>Browser-local builder for AI-ready Markdown.</p></div>
+        <p>Do not paste private member data, payment details or private Drive links into public AI chats.</p>
+        <div class="footer-links"><a href="site-map.html">Site Map</a><a href="privacy-permissions.html">Privacy</a><a href="help.html">Help</a></div>
+      </div>
+    </footer>
+    <button class="to-top" type="button" data-to-top>Back to top</button>
+    <script src="../script.js"></script>
+  </body>
+</html>
